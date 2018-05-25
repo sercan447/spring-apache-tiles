@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+      <tiles-definitions>
+      		<definition name="kalitim_alinacak_tag" template="/WEB-INF/turetilcek/varsayilan.jsp">
+      			<put-attribute name="title"   value="TITLE BAŞLIGI"></put-attribute>
+      			<put-attribute name="header"  value="/WEB-INF/layout-default-page/header.jsp"></put-attribute>
+      			<put-attribute name="content" value="/WEB-INF/layout-default-page/content.jsp"></put-attribute>
+      			<put-attribute name="footer"  value="/WEB-INF/layout-default-page/footer.jsp"></put-attribute>
+      		</definition>	
+      		
+      		
+      		<definition name="hakkimizda" extends="kalitim_alinacak_tag">
+      			<put-attribute name="title" value="Hakkimizda Sayfa Titlesi"></put-attribute>
+      			<put-attribute name="content" value="/WEB-INF/sayfalar/hakkimizda.jsp"></put-attribute>
+      		</definition>
+      		
+      		<definition name="iletisim" extends="kalitim_alinacak_tag">
+      			<put-attribute name="title" value="İletisim Sayfasi Titlesi"></put-attribute>
+      			<put-attribute name="content" value="/WEB-INF/sayfalar/iletisim.jsp"></put-attribute>
+      		</definition>
+      		
+      		<definition name="urunler" extends="kalitim_alinacak_tag">
+      			<put-attribute name="title" value="Urunler Sayfası Titlesi"></put-attribute>
+      			<put-attribute name="content" value="/WEB-INF/sayfalar/urunler.jsp"></put-attribute>
+      		</definition>
+      		
+      		
+      </tiles-definitions> 
